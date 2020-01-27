@@ -1,0 +1,122 @@
+<script src="https://kit.fontawesome.com/8b41a163ea.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light col-md-12" >
+    <a class="navbar-brand col-mod-4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a class="navbar-brand col-mod-4 pagina" href="#"><img src="../../../assets/fulllogo.png" alt=""></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+        </li>
+        <li class="nav-item">
+            
+          <!-- <a class="nav-link" href="#">Link</a> -->
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="form-group row">
+          <ul class="navbar-nav mr-auto ">
+              <li><a class="dropdown-item menu" href="#">Como funcuina?</a></li>
+              <!-- <li><a class="dropdown-item menu" data-toggle="modal" data-target="#modalregister" (click)="cambiaEstado()" href="#">Inicia sesion o registrate</a></li> -->
+              <li><a class="dropdown-item menu" data-toggle="modal" data-target="#modalregister" href="#">Inicia sesion o registrate</a></li>
+          </ul>
+          </div>
+
+         
+
+      </form>
+    </div>
+  </nav>
+  <div class="container col-md-8">
+    <br>
+    <br>
+    <br>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Nombre completo</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="name" formControlName="fullname" required>
+            </div>
+
+          </div>
+          <div class="form-group row">
+            <label for="address" class="col-sm-2 col-form-label">Direccion</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="address" formControlName="address">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="phone" class="col-sm-2 col-form-label">Telefono</label>
+            <div class="col-sm-3">
+              <input type="phone" class="form-control" id="phone" formControlName="phone">
+            </div>
+            <label for="cellphone" class="col-sm-2 col-form-label">Telefono Celular</label>
+            <div class="col-sm-3">
+              <input type="cellphone" class="form-control" id="cellphone" formControlName="cellphone">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="username" class="col-sm-2 col-form-label">Usuario</label>
+            <div class="col-username-3">
+              <input type="text" class="form-control" id="username" formControlName="username">
+            </div>
+            <label for="email" class="col-sm-2 col-form-label">Correo</label>
+            <div class="col-sm-3">
+              <input type="email" class="form-control" id="email" formControlName="email">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="password" class="col-sm-2 col-form-label">password</label>
+            <div class="col-username-3">
+              <input type="password" class="form-control" id="password" formControlName="password">
+            </div>
+            <label for="password2" class="col-sm-2 col-form-label">password</label>
+            <div class="col-sm-3">
+              <input type="password" class="form-control" id="password2" formControlName="password2">
+
+            </div>
+          </div>
+
+          
+
+        <!-- <button type="submit" (click)="onSubmit()" class="btn btn-primary">Submit</button> -->
+        <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Submit</button>
+      </form>
+
+      <!-- <form [formGroup]="profileForm">
+  
+        <label>
+          First Name:
+          <input type="text" formControlName="fullname">
+        </label>
+      
+        <label>
+          Last Name:
+          <input type="text" formControlName="address">
+        </label>
+      
+      </form> -->
+
+  </div>

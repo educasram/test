@@ -1,0 +1,60 @@
+<div >
+    <img class="imagen-login" src="../../../assets/img/logo-3.png" alt="">
+    <div class="linea3">Con tus redes sociales</div>
+    <div class="cont-botones">
+    <div class="face botones" (click)="signInWithFB()">
+      <a href="#" class="redes" >
+        <!-- <button type="button" (click)="signInWithFB()" 
+        *ngIf="loggedIn===false" mat-flat-button color="primary">Facebook</button> -->
+        
+
+        
+        <img (click)="signInWithFB()" width="300%" class="img-face"src="../../../assets/botonfb.png" alt="GOOGLE">
+        <!-- Facebook -->
+      </a>
+    </div>
+
+<div class="google botones">
+  <a href="#" class="redes">
+    <img src="../../../assets/btngoogle.png" class="img-google" alt="GOOGLE">
+    <!-- Google -->
+  </a>
+</div>
+<br/><br/><br/>
+<hr>
+<label class="login">Correo</label><br>
+<input class="campo" type="text" name="email" [(ngModel)]="email" ><br>
+<label class="login">Contraseña</label><br>
+<input class="campo" type="password" name="password" [(ngModel)]="password"><br>
+<input class="login2" type="checkbox" name="recordarme" value="Recordarme"><label class="login3" for="cbox2">Recordarme</label><br>
+<input class="iniciar" type="submit" name="login" (click)="login()" value="Iniciar sesion"><br/><br/>
+<a href="#">
+¿Olvidaste tu contraseña?
+</a><br>
+<label>¿Aun no tienes una cuenta en Trato?</label><br/>
+
+<a routerLink="/register">¡Registrate!</a>
+
+   </div>
+
+</div>
+<div id="fb-root"></div>
+
+<!-- <div class="example">
+  <div class="example-card">
+    <div>
+      <div>
+        <button type="button" (click)="signInWithFB()" *ngIf="loggedIn===false" mat-flat-button color="primary">Facebook</button>
+        <button type="button" (click)="signOut()" *ngIf="loggedIn===true" mat-flat-button color="primary">Sign Out From Facebook</button>
+      </div>
+    </div>
+  </div>
+  <div class="example-card" *ngIf="loggedIn===true">
+    <div>
+      <div><h2>Your Facebook Profile:</h2></div>
+      <div>Full Name: {{user.firstName}} {{user.lastName}}</div>
+    </div>
+    <img div-image [src]="user.photoUrl" alt="My Facebook Photo">
+  </div>
+</div> -->
+
