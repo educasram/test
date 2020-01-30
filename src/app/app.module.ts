@@ -19,6 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { FgComponent } from './components/fg/fg.component';
+import { BarComponent } from './components/bar/bar.component';
+import { PanelComponent } from './components/panel/panel.component';
 
 
 const config = new AuthServiceConfig([
@@ -41,7 +43,9 @@ export function provideConfig() {
     FooterComponent,
     VentasComponent,
     RegisterComponent,
-    FgComponent
+    FgComponent,
+    BarComponent,
+    PanelComponent
 
   ],
   imports: [

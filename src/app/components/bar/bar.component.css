@@ -1,0 +1,24 @@
+.buscador{
+        
+    width: 30%;
+text-align: center;
+color: white;
+font-size: 40px;
+font-weight: bold;
+text-transform: uppercase;
+position: absolute;
+left: 50%;
+top: 40%;
+transform: translateX(-50%) translateY(-40%);
+
+}
+
+.bus{
+  
+    font-size: 20px;
+    color: black;
+  border-radius: 141px 141px 142px 140px;
+-moz-border-radius: 141px 141px 142px 140px;
+-webkit-border-radius: 141px 141px 142px 140px;
+
+}

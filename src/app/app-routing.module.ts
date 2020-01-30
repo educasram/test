@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { VentasComponent } from './components/ventas/ventas.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { FgComponent } from './components/fg/fg.component';
+import { PanelComponent } from './components/panel/panel.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'ventas', component: VentasComponent},
   { path: 'fg', component: FgComponent},
   { path: 'register', component: RegisterComponent},
+  { path: 'panel', component: PanelComponent},
   { path: 'login', component: LoginComponent}
 ];
 
